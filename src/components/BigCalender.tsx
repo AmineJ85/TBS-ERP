@@ -8,7 +8,7 @@ import { useState } from "react";
 const localizer = momentLocalizer(moment);
 
 const BigCalendar = () => {
-  const [view, setView] = useState<View>(Views.WEEK);
+  const [view, setView] = useState<View>(Views.WORK_WEEK);
   const handleOnchangeView = (selectedView: View) => {
     setView(selectedView);
   };
@@ -18,7 +18,7 @@ const BigCalendar = () => {
       events={calendarEvents}
       startAccessor="start"
       endAccessor="end"
-      views={["week", "day", "agenda"]}
+      views={["work_week", "day", "agenda"]}
       view={view}
       style={{ height: "98%" }}
       onView={handleOnchangeView}
