@@ -4,7 +4,7 @@ import Performance from "@/components/Performance";
 import Image from "next/image";
 import Link from "next/link";
 
-const SingleTeacher = () => {
+const SingleStudent = () => {
   return (
     <div className="flex flex-1 flex-col xl:flex-row gap-4 p-4">
       {/* LEFT */}
@@ -15,7 +15,7 @@ const SingleTeacher = () => {
           <div className="bg-tbsSky py-6 px-4 rounded-md flex-1 flex gap-4">
             <div className="w-1/3">
               <Image
-                src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                src="https://images.pexels.com/photos/5414817/pexels-photo-5414817.jpeg?auto=compress&cs=tinysrgb&w=1200"
                 alt=""
                 width={144}
                 height={144}
@@ -23,7 +23,7 @@ const SingleTeacher = () => {
               />
             </div>
             <div className="w-2/3 flex flex-col justify-between gap-4">
-              <h1 className="text-xl font-semibold">Jay Fuller</h1>
+              <h1 className="text-xl font-semibold">Juan Wolfe</h1>
               <p className="text-sm text-gray-500">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>
@@ -73,8 +73,8 @@ const SingleTeacher = () => {
                 className="w-6 h-6"
               />
               <div className="">
-                <h1 className="text-xl font-semibold">2</h1>
-                <span className="text-sm text-gray-400">Branches</span>
+                <h1 className="text-xl font-semibold">6th</h1>
+                <span className="text-sm text-gray-400">Grade</span>
               </div>
             </div>
             {/* CARD */}
@@ -87,7 +87,7 @@ const SingleTeacher = () => {
                 className="w-6 h-6"
               />
               <div className="">
-                <h1 className="text-xl font-semibold">6</h1>
+                <h1 className="text-xl font-semibold">18</h1>
                 <span className="text-sm text-gray-400">Lessons</span>
               </div>
             </div>
@@ -101,8 +101,8 @@ const SingleTeacher = () => {
                 className="w-6 h-6"
               />
               <div className="">
-                <h1 className="text-xl font-semibold">6</h1>
-                <span className="text-sm text-gray-400">Classes</span>
+                <h1 className="text-xl font-semibold">6A</h1>
+                <span className="text-sm text-gray-400">Class</span>
               </div>
             </div>
           </div>
@@ -119,19 +119,19 @@ const SingleTeacher = () => {
           <h1 className="text-xl font-semibold">Shortcuts</h1>
           <div className="mt-4 flex gap-4 flex-wrap text-sm text-gray-500">
             <Link className="p-3 rounded-md bg-tbsSkylIGHT" href="/">
-              Teacher&apos;s Classes
+              Student&apos;s Lessons
             </Link>
             <Link className="p-3 rounded-md bg-tbsPurpleLight" href="/">
-              Teacher&apos;s Students
-            </Link>
-            <Link className="p-3 rounded-md bg-tbsYellowLight" href="/">
-              Teacher&apos;s Lessons
+              Student&apos;s Teachers
             </Link>
             <Link className="p-3 rounded-md bg-pink-50" href="/">
-              Teacher&apos;s Exams
+              Student&apos;s Exams
             </Link>
             <Link className="p-3 rounded-md bg-tbsSkylIGHT" href="/">
-              Teacher&apos;s Assignments
+              Student&apos;s Assignments
+            </Link>
+            <Link className="p-3 rounded-md bg-tbsYellowLight" href="/">
+              Student&apos;s Results
             </Link>
           </div>
         </div>
@@ -142,4 +142,4 @@ const SingleTeacher = () => {
   );
 };
 
-export default SingleTeacher;
+export default SingleStudent;
