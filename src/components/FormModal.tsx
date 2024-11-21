@@ -43,7 +43,11 @@ const FormModal = ({
         <span className="text-center font-medium">
           All data will be lost. Are you sure you want to delete this {table}?{" "}
         </span>
-        <button className="bg-red-700 text-white py-2 px-4 rounded-md border-none w-max self-center">
+        <button
+          id="1f"
+          title="1"
+          className="bg-red-700 text-white py-2 px-4 rounded-md border-none w-max self-center"
+        >
           Delete
         </button>
       </form>
@@ -54,6 +58,8 @@ const FormModal = ({
   return (
     <>
       <button
+        id="2f"
+        title="2"
         className={`${size} flex items-center justify-center rounded-full ${bgColor}`}
         onClick={() => setOpen(true)}
       >
