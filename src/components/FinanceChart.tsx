@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import {
   LineChart,
@@ -73,6 +74,7 @@ const data = [
     expense: 4300,
   },
 ];
+
 const FinanceChart = () => {
   return (
     <div className="bg-white rounded-xl w-full h-full p-4">
@@ -106,13 +108,11 @@ const FinanceChart = () => {
             tickLine={false}
             tickMargin={20}
           />
-          <Tooltip
-            contentStyle={{ borderRadius: "10px", borderColor: "lightgray" }}
-          />
+          <Tooltip />
           <Legend
             align="center"
             verticalAlign="top"
-            wrapperStyle={{ paddingTop: "20px", paddingBottom: "40px" }}
+            wrapperStyle={{ paddingTop: "10px", paddingBottom: "30px" }}
           />
           <Line
             type="monotone"
